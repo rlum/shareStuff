@@ -1,0 +1,112 @@
+CREATE TABLE User( Name
+CHAR(20),
+Phone
+CHAR(10),
+Password CHAR(20),
+Address CHAR(100),
+Email
+CHAR(30),
+PRIMARY KEY (Email) )
+
+CREATE TABLE UserRating( Rating
+INTEGER,
+UR_ID
+CHAR(20),
+Comment CHAR(1000),
+PRIMARY KEY (UR_ID))
+
+CREATE TABLE Makes( Email
+CHAR(30),
+UR_ID CHAR(20),
+PRIMARY KEY (Email, UR_ID) ,
+FOREIGN KEY (Email) REFERENCES UserRating,
+FOREIGN KEY (Email) REFERENCES User
+)
+
+CREATE TABLE has( UR_ID
+CHAR(20) ,
+I_Number INTEGER,
+PRIMARY KEY (UR_ID, I_Number)
+FOREIGN KEY (UR_ID) REFERENCES UserRating,
+FOREIGN KEY (I_Number) REFERENCES Item
+)
+
+CREATE TABLE MakesTransaction(TransactionID
+CHAR(20),
+EndDate,
+DATE
+StartDate,
+DATE
+Type,
+String
+Email,
+CHAR(30)
+PRIMARY KEY (TransactionID, Email)
+FOREIGN KEY Email REFERENCES User
+
+)
+
+CREATE TABLE OwnedBy( I_Number
+INTEGER,
+Email
+CHAR(20) NOT NULL,
+PRIMARY KEY (Email, I_Number)
+FOREIGN KEY (I_Number) REFERENCES Item,
+FOREIGN KEY (Email) REFERENCES User
+)
+
+CREATE TABLE InQueue( Date
+DATE,
+I_Number
+INTEGER,
+Email
+CHAR(30)
+PRIMARY KEY (Email, I_Number)
+FOREIGN KEY (Email) REFERENCES User,
+FOREIGN KEY (I_Number) REFERENCES Item
+)
+
+CREATE TABLE Item( I_Number
+INTEGER,
+Value
+REAL,
+Description
+CHAR(1000),
+Available
+BOOLEAN)
+PRIMARY KEY (I_Number)
+CREATE TABLE Book( I_Number
+INTEGER,
+Title
+CHAR(100),
+Author
+CHAR(40),
+Type
+CHAR(20),
+PRIMARY KEY (I_Number)
+FOREIGN KEY (I_Number) RERERENCES Item
+)
+
+CREATE TABLE CD( I_Number
+INTEGER,
+Genre
+CHAR(20),
+AlbumName
+CHAR(40),
+ArtistName
+CHAR(20),
+PRIMARY KEY (I_Number)
+FOREIGN KEY (I_Number) RERERENCES Item
+)
+
+CREATE TABLE Video( I_Number
+INTEGER,
+Genre
+CHAR(20),
+Format
+CHAR(10),
+Title
+CHAR(40),
+PRIMARY KEY (I_Number)
+FOREIGN KEY (I_Number) RERERENCES Item
+)

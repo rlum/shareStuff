@@ -1,0 +1,2 @@
+create table student (num integer, name char(10), primary key(num))
+/

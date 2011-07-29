@@ -1,0 +1,22 @@
+/cs/csbox/cs304/2011S1/project-spec/i0r7:
+total 199
+drwx------ 3 cs304   512 May 29 23:25 .
+drwx------ 6 cs304   512 May 29 23:25 ..
+-rw------- 1 cs304     0 May 29 23:25 DateSTAMP
+-rw------- 1 cs304 78503 May 29 23:23 cs304.CoverPage.part2.pdf
+-rw------- 1 cs304 64749 May 29 23:23 cs304.project1.milestone2.pdf
+-rw------- 1 cs304 28103 May 29 23:23 shareStuff.ER.v05.jpeg
+-rw------- 1 cs304 27395 May 29 23:23 shareStuff.schema.v05.jpeg
+drwx------ 2 cs304   512 May 29 23:23 src
+
+/cs/csbox/cs304/2011S1/project-spec/i0r7/src:
+total 74
+drwx------ 2 cs304   512 May 29 23:23 .
+drwx------ 3 cs304   512 May 29 23:25 ..
+-rwx------ 1 cs304  8647 May 29 23:23 cs304.CoverPage.odt
+-rw------- 1 cs304 38803 May 29 23:23 cs304.project1.milestone2.odt
+-rwx------ 1 cs304  2774 May 29 23:23 i0r7@ubc
+-rwx------ 1 cs304  2776 May 29 23:23 makeProj02.sql
+-rw------- 1 cs304  2763 May 29 23:23 makeProj03.sql
+-rw------- 1 cs304 12123 May 29 23:23 shareStuff.ER.v05.dia
+-rw------- 1 cs304  3756 May 29 23:23 shareStuff.schema.v05.dia

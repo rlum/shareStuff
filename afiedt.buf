@@ -1,0 +1,2 @@
+insert into item values (default, 99, 'thing', 'T')
+/

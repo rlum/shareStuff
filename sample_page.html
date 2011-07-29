@@ -1,0 +1,80 @@
+<html><body><h1>Richard Was Here!</h1>
+20100903 <br />
+
+<a href="http://Www.google.com">My Home Page</a>
+
+<br />
+<?php echo  $_SERVER["REMOTE_ADDR"]; ?>
+<br />
+<?php echo  $_SERVER["HTTP_CLIENT_IP"]; ?>
+<br />
+<?php echo  $_SERVER["HTTP_X_FORWARDED_FOR"]; ?>
+<br />
+<?php echo  $_SERVER["HTTP_FORWARDED_FOR"]; ?>
+<br />
+
+<form method="post" action="echo.php">
+Name(yours, not mine): <input type="text" size="14" maxlength="40" name="name" value="goober"> <br />
+Password: <input type="password" size="10" maxlength="10" name="password" value="freedom">
+<br/>
+<input type="submit" value="Send"> 
+</form>
+
+<form method="post" action="echo2.php">
+Musical Taste
+<select multiple name="music" size="4">
+<option value="emo" selected>Emo</option>
+<option value="metal/rock" >Metal/Rock</option>
+<option value="hiphop" >Hip Hop</option>
+<option value="ska" >Ska</option>
+<option value="jazz" >Jazz</option>
+<option value="country" >Country</option>
+<option value="classical" >Classical</option>
+<option value="alternative" >Alternative</option>
+<option value="oldies" >Oldies</option>
+<option value="techno" >Techno</option>
+</select>
+<input type="submit" value="done">
+</form>
+
+<br/>
+<br/>
+
+
+<TABLE BORDER="1">
+<TR>
+
+<TD>
+<form method="post" action="oracle-test.php">
+<br/>
+<input type="submit" value="logon to my oracle account "> 
+</form>
+</TD>
+
+<TD>
+<form method="post" action="oralogin.html">
+<br/>
+<input type="submit" value="logon oracle with your own account"> 
+</form>
+</TD>
+
+</TR>
+
+<TR>
+<TD colspan ="2">
+<a href="oracle-test1.php">interactive input and retrieveal of oracle data on my oracle account</a>
+</TD>
+</TR>
+</TABLE>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<FORM><INPUT TYPE="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+</body>
+
+</html>
+

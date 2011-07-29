@@ -1,0 +1,17 @@
+<html>
+<body>
+<?php echo $_GET['myperson'];?>
+
+<form method="POST" action="insertNewItem.php">
+  <p>Value
+	<input type="text" name="value" >
+	<input type="text" name="owner" value="<?php echo $_GET['myperson'];?>" >
+	<input type="submit" value="submit" name="B1"></p>
+		Description
+	<textarea rows="5" cols="75"  name="description" >
+		Tell us about your item
+	</textarea>
+	</p><p>
+</form>
+</body>
+</html>

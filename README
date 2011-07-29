@@ -1,0 +1,21 @@
+cs304 project
+
+share stuff web site designed for Linux/Apache/Oracle database/ PHP    (UBC provided systems).
+includes sql files for instantiating initial database with test data.
+
+not all files are used. given multiple contributors and time constraints, no one 
+had the time to remove old or deprecated html/php files 
+
+Uses html and php, no css.  Not secure, focus was on basic functionality. 
+eg.
+Passwords in plain text in database, 
+only some forms are protected from sql injection. 
+flat directory structures with all files rwx 
+
+
+
+Joint Team authors
+myself
+Rafel Tovar
+Kevin Butto
+Yaphet Vaccari
